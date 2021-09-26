@@ -13,7 +13,11 @@ body {
   font-family: Roboto, sans-serif;
   color: var(--body-color);
 }
-ul,
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 p {
   list-style: none;
   margin: 0;
@@ -23,6 +27,15 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+h1 {
+  margin: 0;
+}
+h2 {
+  margin: 0;
+}
+h3 {
+  margin: 0;
 }
 .head {
   background: var(--max-white-color);
@@ -89,8 +102,8 @@ img {
 .head-container {
   display: flex;
   align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .link-current {
@@ -109,7 +122,10 @@ img {
   color: var(--blue-color);
   line-height: 1.14;
 }
-
+.contact-icon {
+  width: 16px;
+  height: 12px;
+}
 .site-nav {
   list-style-type: none;
   display: flex;
@@ -131,13 +147,14 @@ img {
   text-transform: uppercase;
   color: var(--max-white-color);
   text-decoration: none;
-  padding-bottom: 30px;
 }
 
 .hero {
   background-color: var(--bgr-color);
   padding-top: 200px;
   padding-bottom: 200px;
+  background-image: url(/Users/Велес/Documents/GitHub/goit-markup-hw-04/images/begraund-hero.jpg);
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -181,7 +198,6 @@ img {
 }
 
 .contacts {
-  list-style-type: none;
   display: flex;
   margin-left: auto;
 }
@@ -202,12 +218,52 @@ img {
 }
 
 .text-item {
-  color: var(--body-color);
-  font-size: 14px;
-  margin-bottom: 10px;
-  line-height: 1.14;
-  text-decoration: none;
-  list-style-type: none;
+  cursor: pointer;
+}
+
+.icon-antena::before {
+  display: block;
+  content: '';
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: var(--two-white-color);
+  background-image: url(../images/antenna-icon.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.icon-clock::before {
+  display: block;
+  content: '';
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: var(--two-white-color);
+  background-image: url(../images/clock-icon.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.icon-diagram::before {
+  display: block;
+  content: '';
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: var(--two-white-color);
+  background-image: url(../images/diagram-icon.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.icon-astounavt::before {
+  display: block;
+  content: '';
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: var(--two-white-color);
+  background-image: url(../images/astronaut-icon.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .text-item:not(:last-child) {
   margin-right: 30px;
@@ -219,13 +275,17 @@ img {
 .text-elements {
   color: var(--gray-color);
   font-size: 14px;
-  line-height: 1.7;
+  margin-bottom: 10px;
+  line-height: 1.14;
+  text-decoration: none;
+  list-style-type: none;
 }
 .foto-picture {
 }
 .text-elements-title {
   color: var(--body-color);
   text-decoration: none;
+  margin-bottom: 10px;
 }
 .foto {
   padding-top: 0px;
@@ -298,7 +358,7 @@ img {
   font-size: 16px;
   line-height: 1.18;
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 10px;
 }
 .team-work {
   color: var(--gray-color);
@@ -308,6 +368,14 @@ img {
   margin-bottom: 0px;
 }
 
+.customer-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--body-color);
+}
 .end {
   background: var(--bgr-color);
   padding-top: 60px;
@@ -349,6 +417,13 @@ img {
 }
 .end-contacts:focus {
 }
+.mesenjers {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--max-white-color);
+}
 .button_one {
   font-weight: 500;
   font-size: 16px;
@@ -363,7 +438,6 @@ img {
 .product-elements {
   display: flex;
   flex-wrap: wrap;
-  list-style-type: none;
   margin-left: -30px;
   margin-top: -30px;
 }
@@ -377,7 +451,8 @@ img {
   font-weight: 700;
   color: var(--body-color);
   font-size: 18px;
-  line-height: 3.6;
+  line-height: 1.6;
+  margin-bottom: 4px;
 }
 .product-tape {
   font-family: Roboto;
@@ -389,13 +464,11 @@ img {
 .button-portfolio {
   display: flex;
   justify-content: center;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .btnp-item:not(:last-child) {
   margin-right: 8px;
-}
-.product {
 }
 
 .prod-text {
@@ -411,6 +484,9 @@ img {
 }
 
 .btnp {
+  cursor: pointer;
+  border: transparent;
+  padding: 6px 22px;
   text-align: center;
   letter-spacing: 0.03em;
   display: flex;
