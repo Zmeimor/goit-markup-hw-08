@@ -114,6 +114,7 @@ h3 {
 .contacts-link {
   color: var(--gray-color);
   line-height: 1.14;
+  align-items: center;
 }
 .contacts-link:focus {
   color: var(--blue-color);
@@ -130,6 +131,9 @@ h3 {
   margin-right: 10px;
 }
 .contact-item:hover {
+  fill: var(--blue-color);
+}
+.contact-item:focus {
   fill: var(--blue-color);
 }
 .site-nav {
@@ -153,13 +157,13 @@ h3 {
   text-transform: uppercase;
   color: var(--max-white-color);
   text-decoration: none;
+  margin-bottom: 30px;
 }
 
 .hero {
   background-color: var(--bgr-color);
   padding-top: 200px;
   padding-bottom: 200px;
-  background-image: url(/Users/Велес/Documents/GitHub/goit-markup-hw-04/images/begraund-hero.jpg);
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -226,50 +230,12 @@ h3 {
 .text-item {
   cursor: pointer;
 }
-
-.icon-antena::before {
-  display: block;
-  content: '';
+.icon-text {
+  width: 270px;
   height: 120px;
+  background: var(--two-white-color);
+  border-radius: 4px;
   margin-bottom: 30px;
-  background-color: var(--two-white-color);
-  background-image: url(../images/antenna-icon.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.icon-clock::before {
-  display: block;
-  content: '';
-  height: 120px;
-  margin-bottom: 30px;
-  background-color: var(--two-white-color);
-  background-image: url(../images/clock-icon.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.icon-diagram::before {
-  display: block;
-  content: '';
-  height: 120px;
-  margin-bottom: 30px;
-  background-color: var(--two-white-color);
-  background-image: url(../images/diagram-icon.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.icon-astounavt::before {
-  display: block;
-  content: '';
-  height: 120px;
-  margin-bottom: 30px;
-  background-color: var(--two-white-color);
-  background-image: url(../images/astronaut-icon.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 .text-item:not(:last-child) {
   margin-right: 30px;
@@ -374,16 +340,12 @@ h3 {
   margin-bottom: 0px;
 }
 .team-icon {
-  border-radius: 50%;
-  fill: var(--sprit-grey-color);
-  width: 44px;
-  height: 44px;
+  fill: currentColor;
+  width: 20px;
+  height: 20px;
 }
-.team-icon:hover {
-  fill: var(--max-white-color);
-}
-.team-meseng-item:hover {
-  background-color: var(--blue-color);
+.team-meseng-item:not(:last-child) {
+  margin-right: 10px;
 }
 .customer-title {
   font-weight: bold;
@@ -396,27 +358,37 @@ h3 {
 }
 .customer-list {
   display: flex;
-  flex-direction: row;
-  align-items: center;
 }
-.customer-item {
+.customer-link {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+  border-radius: 4px;
+  color: var(--sprit-grey-color);
 }
-.customer-item:hover {
+.customer-link:hover {
+  border: 1px solid var(--blue-color);
+  color: var(--blue-color);
+}
+.customer-link:focus {
   border: 1px solid var(--blue-color);
 }
 .customer-item:not(:last-child) {
   margin-right: 30px;
 }
 .customer-icon {
-  fill: var(--sprit-grey-color);
-}
-.customer-icon:hover {
-  fill: var(--blue-color);
+  fill: currentColor;
 }
 .end {
   background: var(--bgr-color);
   padding-top: 60px;
   padding-bottom: 60px;
+}
+.end-section {
+  display: flex;
+  flex-direction: row;
 }
 .addres {
   font-style: normal;
@@ -460,24 +432,62 @@ h3 {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--max-white-color);
+  text-align: center;
+  margin-left: 70px;
 }
 .mecenger-box {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-.meseng-item {
+  justify-content: center;
+  margin-top: 16px;
+  margin-left: 70px;
 }
 .mesen-battton {
-  width: 20px;
-  height: 20px;
-}
-.mesenj-icon {
   border-radius: 50%;
-  fill: var(--max-white-color);
-  background: rgba(255, 255, 255, 0.1);
   width: 44px;
   height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--sprit-grey-color);
+}
+
+.mesen-battton:hover {
+  background-color: var(--blue-color);
+  color: var(--max-white-color);
+}
+.mesen-battton:focus {
+  background-color: var(--blue-color);
+  color: var(--max-white-color);
+}
+.mesen-battton-end {
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--max-white-color);
+}
+.meseng-item {
+  color: var(--max-white-color);
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+.mesen-battton-end:focus {
+  background-color: var(--blue-color);
+  color: var(--max-white-color);
+}
+.mesen-battton-end:hover {
+  background-color: var(--blue-color);
+  color: var(--max-white-color);
+}
+.meseng-item:not(:last-child) {
+  margin-right: 10px;
+}
+.mesenj-icon {
+  fill: currentColor;
+  width: 20px;
+  height: 20px;
 }
 .mesenj-icon:hover {
   background-color: var(--blue-color);
@@ -539,8 +549,22 @@ h3 {
   flex-basis: calc(100% / 3 - var(--card-set-gep));
   margin-top: var(--card-set-gep);
   margin-left: var(--card-set-gep);
+  cursor: pointer;
 }
-
+.prod-item:focus {
+  background: var(--max-white-color);
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.prod-item:hover {
+  background: var(--max-white-color);
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 .btnp {
   cursor: pointer;
   border: transparent;
