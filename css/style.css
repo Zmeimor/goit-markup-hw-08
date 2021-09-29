@@ -439,6 +439,11 @@ h3 {
   display: flex;
   justify-content: center;
   margin-top: 16px;
+}
+.mecenger-box-end {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
   margin-left: 70px;
 }
 .mesen-battton {
