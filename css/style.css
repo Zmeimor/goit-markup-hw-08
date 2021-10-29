@@ -141,10 +141,10 @@ h3 {
 .contact-icon {
   margin-right: 10px;
 }
-.contact-item:hover {
+.contact-icon:hover {
   fill: var(--blue-color);
 }
-.contact-item:focus {
+.contact-icon:focus {
   fill: var(--blue-color);
 }
 .site-nav {
@@ -173,15 +173,16 @@ h3 {
 
 .hero {
   background-color: var(--bgr-color);
-  background-image: url(/goit-markup-hw-04/images/begraund-hero.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(/goit-markup-hw-04/images/begraund-hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
   padding-top: 200px;
   padding-bottom: 200px;
   background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4));
-  opacity: 1.5;
 }
 .hero-elements {
   text-align: center;
@@ -225,6 +226,9 @@ h3 {
   margin-left: auto;
 }
 .contacts:focus {
+  color: var(--blue-color);
+}
+.contacts:hover {
   color: var(--blue-color);
 }
 .contact-item:not(:last-child) {
