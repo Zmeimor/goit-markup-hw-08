@@ -62,6 +62,7 @@ h3 {
   line-height: 1.14;
   font-size: 14px;
   letter-spacing: 0.02em;
+  transition: color 250ms linear;
 }
 .link:hover {
   font-weight: 500;
@@ -122,6 +123,7 @@ h3 {
   line-height: 1.14;
   align-items: center;
   font-size: 14px;
+  transition: color 250ms linear;
 }
 .contacts-link:focus {
   color: var(--blue-color);
@@ -130,6 +132,7 @@ h3 {
   color: var(--blue-color);
 }
 .contact-item {
+  transition: color 250ms linear;
   fill: var(--gray-color);
 }
 .contact-item:hover {
@@ -140,6 +143,7 @@ h3 {
 }
 .contact-icon {
   margin-right: 10px;
+  transition: color 250ms linear;
 }
 .contact-icon:hover {
   fill: var(--blue-color);
@@ -200,6 +204,7 @@ h3 {
   border-radius: 4px;
   letter-spacing: 0.06em;
   font-weight: 700;
+  transition: color 250ms linear;
 }
 .btn:hover {
   background-color: var(--blue-color);
@@ -224,6 +229,7 @@ h3 {
 .contacts {
   display: flex;
   margin-left: auto;
+  transition: color 250ms linear;
 }
 .contacts:focus {
   color: var(--blue-color);
@@ -301,6 +307,9 @@ h3 {
 .foto-item:not(:last-child) {
   margin-right: 30px;
 }
+.foto-item {
+  position: relative;
+}
 .foto_title {
   width: 380;
   text-align: center;
@@ -358,7 +367,20 @@ h3 {
 .menu-foto {
   display: flex;
 }
-
+.foto-text {
+  letter-spacing: 0.03em;
+  font-size: 14px;
+  line-height: 1.14;
+  font-weight: 700;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  text-align: center;
+  padding: 27px 82px;
+  color: var(--max-white-color);
+  background-color: rgba(47, 48, 58, 0.8);
+}
 .team-name {
   font-weight: 500;
   color: var(--body-color);
@@ -378,6 +400,7 @@ h3 {
   fill: currentColor;
   width: 20px;
   height: 20px;
+  transition: color 250ms linear;
 }
 .team-meseng-item:not(:last-child) {
   margin-right: 10px;
@@ -403,6 +426,7 @@ h3 {
   border-radius: 4px;
   color: var(--sprit-grey-color);
   border: 1px solid;
+  transition: color 250ms linear;
 }
 .customer-link:hover {
   border: 1px solid var(--blue-color);
@@ -497,6 +521,7 @@ h3 {
   align-items: center;
   justify-content: center;
   color: var(--sprit-grey-color);
+  transition: background-color 250ms linear;
 }
 
 .mesen-battton:hover {
@@ -515,6 +540,7 @@ h3 {
   align-items: center;
   justify-content: center;
   color: var(--max-white-color);
+  transition: background-color 250ms linear;
 }
 .meseng-item {
   color: var(--max-white-color);
@@ -536,9 +562,7 @@ h3 {
   fill: currentColor;
   width: 20px;
   height: 20px;
-}
-.mesenj-icon:hover {
-  background-color: var(--blue-color);
+  transition: fill 250ms linear;
 }
 .button_one {
   font-weight: 500;
@@ -593,11 +617,33 @@ h3 {
   border-bottom: 1px solid var(--white-color);
   border-left: 1px solid var(--white-color);
 }
+.prod-item-masters {
+}
 .prod-item {
   flex-basis: calc(100% / 3 - var(--card-set-gep));
   margin-top: var(--card-set-gep);
   margin-left: var(--card-set-gep);
   cursor: pointer;
+  transition: color 250ms linear;
+  position: relative;
+  overflow: hidden;
+}
+.prod-item:hover .prod-content {
+  font-family: Roboto;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  color: var(--max-white-color);
+  background-color: rgba(33, 150, 243, 0.9);
+  padding: 63px 24px;
+  height: 100%;
+}
+.prod-content {
+  overflow: hidden;
 }
 .prod-item:focus {
   background: var(--max-white-color);
@@ -626,6 +672,8 @@ h3 {
   justify-content: center;
   cursor: pointer;
   border-radius: 4px;
+  transition: color 250ms linear;
+  transition: background-color 250ms linear;
 }
 
 .btnp:focus {
@@ -652,7 +700,8 @@ h3 {
 }
 .btnp-item {
   list-style-type: none;
+  transition: background-color 250ms linear;
 }
-.btnp-item:focus {
-  list-style-type: none;
+.btnp-item:focus,
+:hover {
 }
