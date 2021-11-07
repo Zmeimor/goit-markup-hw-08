@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="./css/style.css"/>
 </head>
+<script src="./js/modal.js"></script>
   <body>
     <header class="head">
       <div class="container head-container">
@@ -30,7 +31,7 @@
     <section class="hero">
       <div class="container hero-elements">
     <h1 class="title">Эффективные решения для вашего бизнеса</h1>
-    <button type="button" class="btn">Заказать услугу</button>
+    <button type="button" data-modal-open class="btn">Заказать услугу</button>
   </div>
   </section>
   <!-- Унікальний контент сторінки -->
@@ -174,4 +175,11 @@
   </div>
   </div>
   </footer>
+  <div class="backdrop" data-modal>
+    <div class="modal">
+      <button type="button" data-modal-close class="modal-btn"><svg class="icon-close" widht="18" height="18"><use href="./images/sprite.svg#icon-close-black"></use></button>
+    </div>
+  </div>
   </body>
+  <script src="./js/modal-js"></script>
+  </html>

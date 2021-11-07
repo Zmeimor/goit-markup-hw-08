@@ -132,7 +132,7 @@ h3 {
   color: var(--blue-color);
 }
 .contact-item {
-  transition: color 250ms linear;
+  transition: fill 250ms linear;
   fill: var(--gray-color);
 }
 .contact-item:hover {
@@ -143,7 +143,7 @@ h3 {
 }
 .contact-icon {
   margin-right: 10px;
-  transition: color 250ms linear;
+  transition: fill 250ms linear;
 }
 .contact-icon:hover {
   fill: var(--blue-color);
@@ -319,13 +319,11 @@ h3 {
   line-height: 1.16;
   margin: 0px 0px 50px 0px;
 }
-
 .site-nav {
   font-style: 500;
   font-weight: 500;
   color: var(--body-color);
 }
-
 .team {
   background: var(--two-white-color);
 }
@@ -354,16 +352,13 @@ h3 {
   margin: 0px 0px 50px 0px;
   text-align: center;
 }
-
 .foto-elements {
   display: flex;
   flex-direction: column;
 }
-
 .foto_title {
   color: var(--body-color);
 }
-
 .menu-foto {
   display: flex;
 }
@@ -469,7 +464,6 @@ h3 {
 .web-end-two {
   color: var(--max-white-color);
 }
-
 .end-contakts {
   font-weight: 400;
   background-color: var(--bgr-color);
@@ -502,6 +496,7 @@ h3 {
   text-transform: uppercase;
   color: var(--max-white-color);
   text-align: left;
+  margin-top: 15px;
 }
 .mecenger-box {
   display: flex;
@@ -600,17 +595,14 @@ h3 {
   font-size: 16px;
   line-height: 1.8;
 }
-
 .button-portfolio {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
 }
-
 .btnp-item:not(:last-child) {
   margin-right: 8px;
 }
-
 .prod-text {
   padding: 20px 24px;
   border-right: 1px solid var(--white-color);
@@ -618,6 +610,8 @@ h3 {
   border-left: 1px solid var(--white-color);
 }
 .prod-item-masters {
+  position: relative;
+  overflow: hidden;
 }
 .prod-item {
   flex-basis: calc(100% / 3 - var(--card-set-gep));
@@ -644,6 +638,19 @@ h3 {
 }
 .prod-content {
   overflow: hidden;
+  position: absolute;
+  font-family: Roboto;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  position: absolute;
+  text-align: center;
+  color: var(--max-white-color);
+  background-color: rgba(33, 150, 243, 0.9);
+  padding: 63px 24px;
+  height: 100%;
+  transform: translateY(100%);
+  transition: transform 250 lainear;
 }
 .prod-item:focus {
   background: var(--max-white-color);
@@ -704,4 +711,45 @@ h3 {
 }
 .btnp-item:focus,
 :hover {
+}
+
+.backdrop {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  transition: opacity 250ms linear, visibility 250ms linear;
+}
+.modal {
+  width: 528px;
+  min-height: 581px;
+  background-color: var(--max-white-color);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  transform: translate(-50%, -50%);
+}
+.modal-btn {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  background-color: var(--max-white-color);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  fill: var(--body-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.backdrop.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
 }
