@@ -609,48 +609,27 @@ h3 {
   border-bottom: 1px solid var(--white-color);
   border-left: 1px solid var(--white-color);
 }
-.prod-item-masters {
-  position: relative;
-  overflow: hidden;
-}
 .prod-item {
   flex-basis: calc(100% / 3 - var(--card-set-gep));
   margin-top: var(--card-set-gep);
   margin-left: var(--card-set-gep);
   cursor: pointer;
   transition: color 250ms linear;
-  position: relative;
-  overflow: hidden;
 }
-.prod-item:hover .prod-content {
-  font-family: Roboto;
-  font-size: 18px;
-  line-height: 1.5;
-  letter-spacing: 0.03em;
+.prod-item-masters {
+  position: relative;
+}
+.prod-content {
   position: absolute;
   top: 0;
   left: 0;
-  text-align: center;
   color: var(--max-white-color);
-  background-color: rgba(33, 150, 243, 0.9);
-  padding: 63px 24px;
-  height: 100%;
-}
-.prod-content {
-  overflow: hidden;
-  position: absolute;
-  font-family: Roboto;
+  line-height: 1.55;
+  font-weight: 500;
   font-size: 18px;
-  line-height: 1.5;
-  letter-spacing: 0.03em;
-  position: absolute;
-  text-align: center;
-  color: var(--max-white-color);
-  background-color: rgba(33, 150, 243, 0.9);
+  background: rgba(33, 150, 243, 0.9);
   padding: 63px 24px;
   height: 100%;
-  transform: translateY(100%);
-  transition: transform 250 lainear;
 }
 .prod-item:focus {
   background: var(--max-white-color);
