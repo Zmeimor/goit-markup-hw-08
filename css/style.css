@@ -618,6 +618,10 @@ h3 {
 }
 .prod-item-masters {
   position: relative;
+  overflow: hidden;
+}
+.prod-item:hover .prod-content {
+  transform: translateY(0);
 }
 .prod-content {
   position: absolute;
@@ -630,6 +634,8 @@ h3 {
   background: rgba(33, 150, 243, 0.9);
   padding: 63px 24px;
   height: 100%;
+  transform: translateY(100%);
+  transition: transform 250ms linear;
 }
 .prod-item:focus {
   background: var(--max-white-color);
