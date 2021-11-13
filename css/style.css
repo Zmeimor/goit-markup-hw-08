@@ -738,3 +738,12 @@ h3 {
   opacity: 0;
   pointer-events: none;
 }
+.icon-close:hover {
+  color: var(--blue-color);
+}
+.icon-close:focus {
+  color: var(--blue-color);
+}
+.icon-close {
+  fill: currentColor;
+}
