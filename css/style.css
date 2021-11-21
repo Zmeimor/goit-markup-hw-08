@@ -447,6 +447,8 @@ h3 {
   background: var(--bgr-color);
   padding-top: 60px;
   padding-bottom: 60px;
+  align-items: baseline;
+  justify-content: space-between;
 }
 .end-section {
   display: flex;
@@ -489,6 +491,9 @@ h3 {
 .end-one {
   margin-right: 70px;
 }
+.end-two {
+  margin-right: 93px;
+}
 .mesenjers {
   font-size: 14px;
   line-height: 1.14;
@@ -497,6 +502,7 @@ h3 {
   color: var(--max-white-color);
   text-align: left;
   margin-top: 15px;
+  font-weight: 700;
 }
 .mecenger-box {
   display: flex;
@@ -536,6 +542,66 @@ h3 {
   justify-content: center;
   color: var(--max-white-color);
   transition: background-color 250ms linear;
+}
+.end-three {
+  display: flex;
+}
+.end-form {
+}
+.form-end-button-text {
+  font-family: Roboto;
+
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: var(--max-white-color);
+}
+.email-form-end {
+}
+.end-label {
+}
+.end-input {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background: var(--bgr-color);
+  font-size: 16px;
+  line-height: 1.25;
+  padding-left: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-right: 10px;
+}
+.end-form-btn {
+  background-color: var(--blue-color);
+  color: var(--max-white-color);
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+  line-height: 1.87;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  letter-spacing: 0.06em;
+  font-weight: 700;
+  width: 200px;
+  height: 50px;
+  transition: color 250ms linear;
+  position: relative;
+  padding: 10px 29px 28px 10px;
+}
+.end-form-icon {
+  fill: currentColor;
+  position: absolute;
+  top: 50%;
+  margin-left: 10px;
+  transform: translateY(-50%);
 }
 .meseng-item {
   color: var(--max-white-color);
@@ -756,12 +822,16 @@ h3 {
   font-size: 18px;
   font-weight: 700;
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 12px;
 }
 .modal-form-fieled {
   font-size: 14px;
   font-weight: 400;
   margin-bottom: 20px;
+  margin-top: 10px;
+  font-size: 12px;
+  letter-spacing: 0.01em;
+  color: var(--gray-color);
 }
 .modal-form-vrape {
   position: relative;
@@ -775,6 +845,15 @@ h3 {
   padding-left: 30px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  transition: border-color 250ms linear;
+}
+.modal-imput:focus + .sprite-form {
+  color: var(--blue-color);
+  border-color: var(--blue-color);
+}
+.modal-imput:focus {
+  border-color: var(--blue-color);
+  outline: none;
 }
 .modal-form-massage {
   width: 100%;
@@ -783,6 +862,11 @@ h3 {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   resize: none;
+  margin-top: 4px;
+}
+.modal-form-massage:focus {
+  outline: none;
+  border-color: var(--blue-color);
 }
 .sprite-form {
   display: block;
@@ -792,6 +876,62 @@ h3 {
   left: 12px;
   position: absolute;
   transform: translateY(-50%);
+  fill: currentColor;
+  color: var(--body-color);
+  transition: color 250ms linear;
+}
+.sprite-form:focus {
+  fill: var(--blue-color);
+}
+.modal-form-checkbox-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  line-height: 1.7;
+  margin-bottom: 30px;
+  letter-spacing: 0.03em;
+  color: var(--gray-color);
+}
+.modal-form-checkbox-label::before {
+  display: block;
+  content: '';
+  width: 16px;
+  height: 15px;
+  border: 0.2px solid #212121;
+  cursor: pointer;
+  margin-right: 6px;
+}
+.modal-form-checkbox:checked + .modal-form-checkbox-label::before {
+  background-image: url(../images/galka.svg);
+  border-color: var(--blue-color);
+  background-color: var(--blue-color);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.modal-form-checkbox:focus + .modal-form-checkbox-label::before {
+  outline: 2px solid var(--blue-color);
+}
+.form-link {
+  color: var(--blue-color);
 }
 .modal-form-button {
+  width: 200px;
+  height: 50px;
+  background: var(--blue-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  margin: auto;
+  color: var(--max-white-color);
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  font-weight: 700;
+}
+.modal-form-button:focus {
+  background: #188ce8;
+}
+.modal-form-button:hover {
+  background: #188ce8;
 }
