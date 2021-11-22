@@ -545,7 +545,7 @@ h3 {
 }
 .end-three {
   display: flex;
-  padding-left: 26px;
+  margin-left: auto;
 }
 .end-form {
 }
