@@ -10,21 +10,27 @@
 <link rel="stylesheet" href="./css/style.css"/>
 </head>
   <body>
-    <header class="head">
-      <div class="container head-container">
-        <a class="logo" href="/"><span class="web-one">Web</span><span class="web-two">Studio</span></a>
-        <nav>
-      <ul class="site-nav">
-         <li class="site-nav-item"><a href="index.html" class="link">Студия</a></li>
-         <li class="site-nav-item"><a href="portfolio.html" class="link activate">Портфолио</a></li>
-         <li class="site-nav-item"><a href="" class="link">Контакты</a></li>
+  <header class="head">
+    <div class="container head-container">
+      <a class="logo logo__head" href="/"><span class="web-one">Web</span><span class="web-two">Studio</span></a>
+      <nav>
+        <ul class="site__nav">
+          <li class="site-nav__item"><a href="./" class="link__nav activate">Студия</a></li>
+          <li class="site-nav__item"><a href="./portfolio.html" class="link__nav">Портфолио</a></li>
+          <li class="site-nav__item"><a href="" class="link__nav">Контакты</a></li>
+        </ul>
+      </nav>
+      <ul class="contacts">
+        <li class="contacts-item__head"><a class="contacts__link" href="mailto:info@example.com"><svg width="16"
+              height="12" class="contacts__icon contacts__head">
+              <use href="./images/sprite.svg#icon-envelope"></use>
+            </svg>info@example.com</a></li>
+        <li class="contacts-item__head"><a class="contacts__link" href="tel:+38 099 111 11 11"><svg width="10" height="16"
+              class="contacts__icon contacts__head">
+              <use href="./images/sprite.svg#icon-smartphone"></use>
+            </svg>+380991111111</a></li>
       </ul>
-    </nav>
-     <ul class="contacts">
-      <li class="contact-item"><a class="contacts-link" href="mailto:info@example.com"><svg class="contact-icon" width="16" height="12" ><use href="./images/sprite.svg#icon-envelope"></use></svg>info@example.com</a></li>
-      <li class="contact-item"><a class="contacts-link" href="tel:+38 099 111 11 11"><svg class="contact-icon" width="10" height="16"><use href="./images/sprite.svg#icon-smartphone"></use></svg>+380991111111</a></li>
-    </ul>
-     </div>
+    </div>
   </header>
   <main class="container-portfolio">
     <section class="section">
