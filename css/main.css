@@ -94,6 +94,7 @@ h3 {
   list-style-type: none;
   display: flex;
   flex-direction: row;
+  text-decoration: none;
   font-style: 500;
   font-weight: 500;
   color: var(--body-color);
@@ -110,6 +111,7 @@ h3 {
   font-size: 14px;
   letter-spacing: 0.02em;
   transition: color 250ms linear;
+  text-decoration: none;
 }
 
 .link__nav:hover, .link__nav:focus {
@@ -770,6 +772,7 @@ h3 {
   align-items: center;
   font-size: 14px;
   transition: color 250ms linear;
+  text-decoration: none;
 }
 
 .contacts__link:hover, .contacts__link:focus {
